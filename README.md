@@ -31,7 +31,8 @@ Every stage of the deployment has been documented with screenshots and detailed 
 
 ## Network Topology
 
-> *(Insert your Network Topology image here)*
+<img width="1536" height="1024" alt="Network Topology" src="https://github.com/user-attachments/assets/28cb5e10-d7e6-4d73-a939-78f4b200f716" />
+
 
 ---
 
