@@ -103,7 +103,9 @@ Every stage of the deployment has been documented with screenshots and detailed 
 
 ## Documentation
 
-The complete deployment guide is available in the **documentation** folder.
+The complete deployment guide is available here:
+
+- 📄 [Enterprise Active Directory Infrastructure Lab.pdf](documentation/Enterprise%20Active%20Directory%20Infrastructure%20Lab.pdf)
 
 Included documentation covers:
 
