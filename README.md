@@ -1,28 +1,51 @@
-# Microsoft Active Directory Home Lab
+# Enterprise Active Directory Infrastructure Lab
 
-A hands-on Microsoft Active Directory Home Lab built using **Windows Server 2025** and **VMware Workstation Pro** to develop practical skills in Windows Server administration, Active Directory, networking and enterprise IT infrastructure.
+A production-style Active Directory infrastructure built using **Windows Server 2025**, **Windows 11 Enterprise**, and **VMware Workstation Pro** to demonstrate practical Windows Server administration, enterprise networking, and IT support skills.
 
 ---
 
 ## Project Overview
 
-This project documents the deployment and configuration of a Windows Server 2025 Domain Controller in a virtual lab environment.
+This project documents the complete design, deployment, configuration, and validation of a Microsoft Active Directory environment within a virtualised enterprise lab.
 
-The lab is being built to simulate real-world enterprise infrastructure while developing practical experience relevant to IT Support, Help Desk and Systems Administration roles.
+The objective was to simulate a realistic Windows domain environment while developing practical experience relevant to **IT Support**, **Help Desk**, **Desktop Support**, and **Junior Systems Administrator** roles.
 
-Each stage of the implementation is documented with detailed explanations and screenshots.
+The completed environment includes:
+
+- Windows Server 2025 Domain Controller
+- Active Directory Domain Services (AD DS)
+- DNS
+- Organisational Units (OUs)
+- Security Groups
+- Windows 11 Enterprise domain client
+- Group Policy Objects (GPOs)
+- Shared Folders
+- NTFS Permissions
+- Password Reset
+- Account Lockout Policy
+- Enterprise Documentation
+
+Every stage of the deployment has been documented with screenshots and detailed technical explanations.
+
+---
+
+## Network Topology
+
+> *(Insert your Network Topology image here)*
 
 ---
 
 ## Technologies Used
 
 - Windows Server 2025
-- Active Directory Domain Services (AD DS)
+- Windows 11 Enterprise
 - VMware Workstation Pro
-- Windows 11 Enterprise *(Planned)*
-- DNS *(In Progress)*
-- DHCP *(Planned)*
-- Group Policy *(Planned)*
+- Active Directory Domain Services (AD DS)
+- DNS
+- Group Policy
+- NTFS Permissions
+- Windows Networking
+- Virtualisation
 
 ---
 
@@ -30,10 +53,15 @@ Each stage of the implementation is documented with detailed explanations and sc
 
 - Windows Server Administration
 - Active Directory Administration
-- Virtualisation
-- Network Configuration
-- System Administration
-- Troubleshooting
+- DNS Configuration
+- Group Policy Management
+- Windows 11 Administration
+- User & Group Administration
+- Identity & Access Management
+- Network Share Configuration
+- NTFS Permissions
+- Windows Networking
+- IT Support Troubleshooting
 - Technical Documentation
 
 ---
@@ -41,47 +69,59 @@ Each stage of the implementation is documented with detailed explanations and sc
 ## Lab Environment
 
 | Component | Details |
-|----------|---------|
+|-----------|---------|
 | Host Operating System | Windows 11 |
 | Hypervisor | VMware Workstation Pro |
-| Server | Windows Server 2025 |
-| Server Name | DC01 |
+| Domain Controller | DC01 |
+| Operating System | Windows Server 2025 Standard |
+| Client Workstation | PC01 |
+| Client Operating System | Windows 11 Enterprise |
 | Domain | home.lab |
+| Network | VMware NAT |
+
+---
+
+## Features
+
+- ✅ Windows Server 2025 Deployment
+- ✅ Active Directory Domain Services
+- ✅ DNS Configuration
+- ✅ Domain Controller Promotion
+- ✅ Organisational Units
+- ✅ Security Groups
+- ✅ User Administration
+- ✅ Windows 11 Domain Join
+- ✅ Network Shares
+- ✅ NTFS Permissions
+- ✅ Group Policy Objects
+- ✅ Password Reset
+- ✅ Account Lockout Policy
+- ✅ Enterprise Documentation
 
 ---
 
 ## Documentation
 
-| Document | Description |
-|----------|-------------|
-| [01 - Introduction](documentation/01-Introduction.md) | Project overview, objectives and lab environment |
-| [02 - Windows Server Setup](documentation/02-Windows-Server-Setup.md) | Virtual machine creation and initial Windows Server configuration |
-| 03 - Active Directory Installation *(Coming Soon)* | Installing Active Directory Domain Services |
-| 04 - Domain Controller Configuration *(Coming Soon)* | Promoting the server and creating the Active Directory forest |
-| 05 - DNS Configuration *(Coming Soon)* | Configuring DNS for Active Directory |
-| 06 - DHCP Configuration *(Coming Soon)* | Configuring DHCP services |
-| 07 - Organisational Units *(Coming Soon)* | Creating the Active Directory structure |
-| 08 - Users and Groups *(Coming Soon)* | Managing Active Directory users and groups |
-| 09 - Group Policy *(Coming Soon)* | Creating and applying Group Policy Objects |
-| 10 - Windows 11 Domain Join *(Coming Soon)* | Joining a Windows 11 client to the domain |
-| 11 - Shared Folders and Permissions *(Coming Soon)* | Configuring NTFS permissions and file sharing |
-| 12 - Lessons Learned *(Coming Soon)* | Reflection and key takeaways |
+The complete deployment guide is available in the **documentation** folder.
 
----
+Included documentation covers:
 
-## Current Progress
-
-- ✅ Windows Server 2025 deployed
-- ✅ Server configured
-- ✅ Static IPv4 configured
-- ✅ VMware snapshot created
-- ✅ Active Directory Domain Services installed
-- ✅ Domain Controller promoted
-- ✅ home.lab forest created
-- ⏳ DNS configuration
-- ⏳ DHCP configuration
-- ⏳ Active Directory administration
-- ⏳ Windows 11 client deployment
+- Environment Planning
+- Windows Server Deployment
+- Active Directory Installation
+- DNS Configuration
+- Domain Controller Promotion
+- Organisational Units
+- Security Groups
+- User Management
+- Windows 11 Domain Join
+- File Shares
+- NTFS Permissions
+- Group Policy
+- Password Reset
+- Account Lockout
+- Environment Validation
+- Lessons Learned
 
 ---
 
@@ -92,25 +132,39 @@ active-directory-home-lab/
 │
 ├── README.md
 ├── documentation/
+│   ├── Enterprise Active Directory Infrastructure Lab.pdf
+│   └── Enterprise Active Directory Infrastructure Lab.docx
+│
+├── diagrams/
+│   └── Network Topology.png
+│
 ├── screenshots/
-└── LICENSE (optional)
+│   ├── 01 - VM Creation.png
+│   ├── ...
+│   └── 76 - Final Validation.png
+│
+└── images/
 ```
 
 ---
 
 ## Future Improvements
 
-The project will continue to expand with additional enterprise technologies, including:
+Future enhancements planned for this lab include:
 
-- DNS
-- DHCP
-- Group Policy
-- Windows 11 Enterprise
-- Active Directory Users and Groups
-- File Shares
-- NTFS Permissions
-- PowerShell
-- Additional Windows Server administration tasks
+- Secondary Domain Controller
+- DHCP Server
+- WSUS
+- PowerShell Automation
+- Microsoft Entra ID Integration
+- Microsoft 365 Administration
+- osTicket Help Desk Integration
+
+---
+
+## About This Project
+
+This project was developed as part of my personal IT portfolio to gain hands-on experience with enterprise Windows infrastructure and demonstrate practical technical skills beyond coursework and certifications.
 
 ---
 
@@ -118,4 +172,5 @@ The project will continue to expand with additional enterprise technologies, inc
 
 **Deividas Talocka**
 
-Computer Science student with an interest in IT Support, Windows Server administration and enterprise infrastructure.
+Computer Science Student  
+Aspiring IT Support Technician | Windows Server | Active Directory | Networking | Systems Administration
